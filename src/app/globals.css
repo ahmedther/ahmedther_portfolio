@@ -8,6 +8,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --yellow-500: rgb(234 179 8);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +50,7 @@ body {
   font-style: normal;
   line-height: 1.5;
   scroll-behavior: smooth;
+  /* background-color: black; */
 }
 
 @layer base {
@@ -69,4 +71,14 @@ h6 {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.boxShadow:hover {
+  -webkit-box-shadow: 0px 0px 94px 10px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 0px 0px 94px 10px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 94px 10px rgba(255, 255, 255, 0.75);
+}
+
+.div {
+  color: #ffffffbf;
 }

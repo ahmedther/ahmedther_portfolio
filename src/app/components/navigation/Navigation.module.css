@@ -1,0 +1,39 @@
+.nav {
+  transition: transform 0.3s ease;
+  padding: 1rem 2rem;
+  letter-spacing: 0.1em;
+  color: white;
+  opacity: 0.4;
+}
+
+/* Glassmorphism card effect */
+.inactive:hover {
+  box-sizing: content-box;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 12px;
+  background-color: white;
+  transform: translate3d(0, -1rem, 0);
+  opacity: 1;
+  color: var(--yellow-500);
+  font-weight: 600;
+  text-underline-offset: 4px;
+  text-decoration-line: underline;
+}
+
+.active {
+  opacity: 1;
+  color: var(--yellow-500);
+  font-weight: 600;
+}
+.active:hover {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 12px;
+  background-color: white;
+  text-underline-offset: 4px;
+  text-decoration-line: underline;
+  cursor: not-allowed !important;
+  color: black;
+  opacity: 0.4;
+}

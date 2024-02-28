@@ -11,6 +11,14 @@ const config: Config = {
       fontFamily: {
         sans: ["Roboto Mono", "monospace"],
       },
+      boxShadow: {
+        custom: "0px 0px 94px 10px rgba(255, 255, 255, 0.75)",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      boxShadow: ["hover"],
     },
   },
   plugins: [],

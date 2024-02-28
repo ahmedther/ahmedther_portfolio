@@ -20,9 +20,7 @@ const ParticlesTs = () => {
     });
   }, []);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
+  const particlesLoaded = async (container?: Container): Promise<void> => {};
 
   const options: ISourceOptions = useMemo(() => particleConfig, []);
 
@@ -37,13 +35,7 @@ const ParticlesTs = () => {
     );
   }
 
-  return (
-    <>
-      <p className="absolute w-full h-full  text-red-500 text-[3rem]">
-        Loding ...
-      </p>
-    </>
-  );
+  return <></>;
 };
 
 export default ParticlesTs;
