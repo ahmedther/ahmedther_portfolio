@@ -13,15 +13,15 @@ const navigation_data: NavigationItem[] = [
     name: "About Me",
   },
   {
-    href: "about",
+    href: "resume",
     name: "Resume",
   },
   {
-    href: "about",
+    href: "proj",
     name: "Projects",
   },
   {
-    href: "about",
+    href: "gues",
     name: "Guest List",
   },
 ];

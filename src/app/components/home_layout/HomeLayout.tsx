@@ -1,8 +1,8 @@
-import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import React from "react";
 import Navigation from "../navigation/Navigation";
 import HomeFooter from "./HomeFooter";
+import TypewritterEffect from "../ui/TypewritterEffect";
 
 const HomeLayout: React.FC = () => {
   return (
@@ -25,28 +25,18 @@ const HomeLayout: React.FC = () => {
             </div>
           </div>
           <h1
-            className="text-white text-6xl tracking-[.5rem] py-4 px-4 font-semibold
-          hover:rounded-xl hover:-translate-y-4 hover:bg-[#ffffff3a] hover:backdrop-blur-sm hover:text-yellow-500 hover:transition hover:duration-300 hover:ease-out boxShadow"
+            className="text-white text-6xl tracking-[.5rem] py-4 px-8 font-semibold
+          hover:rounded-xl hover:-translate-y-4 hover:bg-[#ffffff] hover:backdrop-blur-sm hover:text-yellow-500 hover:transition hover:duration-300 hover:ease-out boxShadow"
           >
             Ahmed Qureshi
           </h1>
-          <h2 className="text-white text-3xl m-0">Full Stack Devloper</h2>
-
-          <Typewriter
-            onInit={(typewriter) => {
-              typewriter
-                .typeString("Hello World!")
-                .callFunction(() => {
-                  console.log("String typed out!");
-                })
-                .pauseFor(2500)
-                .deleteAll()
-                .callFunction(() => {
-                  console.log("All strings were deleted");
-                })
-                .start();
-            }}
-          />
+          <h2
+            //  className="text-white text-3xl m-0"
+            className="text-white text-4xl  py-4 px-8 font-semibold
+           hover:rounded-xl  hover:bg-[#ffffff] hover:backdrop-blur-sm hover:text-yellow-500 hover:transition hover:duration-300 hover:ease-out boxShadow"
+          >
+            <TypewritterEffect />
+          </h2>
         </main>
         <HomeFooter />
       </div>
