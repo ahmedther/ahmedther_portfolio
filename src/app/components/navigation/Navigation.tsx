@@ -11,7 +11,7 @@ interface NavigationProps {
   className?: string;
 }
 
-const Navigation: React.FC<NavigationProps> = ({ className = "mb-8" }) => {
+const Navigation: React.FC<NavigationProps> = ({ className = "m-12" }) => {
   const pathname: string = usePathname();
   const currentPath: string =
     pathname.length > 1 ? pathname.substring(1) : pathname;

@@ -11,13 +11,16 @@ const animationProps = {
 };
 
 interface GlareEffectsProps {
-  children: React.ReactElement;
+  children: React.ReactNode;
   className?: string;
 }
 
 const GlareEffect: React.FC<GlareEffectsProps> = ({
   children,
-  className = "m-auto flex flex-col items-center gap-10 p-32 text-white  bg-[#3a3a3a41] rounded-xl backdrop-blur-sm  w-9/12 border-[#3a3a3a41]  border-solid overflow-hidden",
+  className = `m-auto flex flex-col items-center 
+  gap-10 p-32 text-white  bg-[#3a3a3a41] rounded-xl 
+  backdrop-blur-sm  w-9/12 border-[#3a3a3a41] 
+   border-solid  overflow-hidden relative   `,
 }) => {
   const x = useMotionValue<number>(0);
   const y = useMotionValue<number>(0);
