@@ -17,11 +17,11 @@ const navigation_data: NavigationItem[] = [
     name: "Resume",
   },
   {
-    href: "proj",
+    href: "projects",
     name: "Projects",
   },
   {
-    href: "gues",
+    href: "guest",
     name: "Guest List",
   },
 ];

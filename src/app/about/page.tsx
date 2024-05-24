@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "About | Ahmed Qureshi - Full Stack Developer | Learn More About My Journey",
   description:
     "Get to know more about Ahmed Qureshi, a seasoned Full Stack Developer based in Halifax, NS. Discover his journey, experiences, projects, and contributions in the field of web development. Specializing in Python, JavaScript, Dart, SQL, Django, DjangoREST Framework, React, SvelteKit, Flutter, Next.js, and more.",
+  creator: "Ahmed Qureshi",
+  publisher: "Ahmed Qureshi",
 };
 
 const AboutMe: React.FunctionComponent = () => {

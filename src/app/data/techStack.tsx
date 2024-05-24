@@ -50,9 +50,6 @@ import {
   SiApache,
 } from "react-icons/si";
 
-import { FaGithub } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
-
 export interface TechStackItem {
   name: string;
   icon: React.ReactNode;

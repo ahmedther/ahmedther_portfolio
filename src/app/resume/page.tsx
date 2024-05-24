@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   title: "Resume | Ahmed Qureshi - Full Stack Developer",
   description:
     "Ahmed Qureshi is a Full Stack Developer based in Halifax, NS. Skilled in Python, JavaScript, Typescript, Dart, HTML, SQL, and more. Experienced in working with frameworks and libraries like Django, DjangoREST Framework, React, SvelteKit, Flutter, and Next.js. Proficient in DevOps tools like Docker and Kubernetes. Check out the portfolio to learn more about Ahmed's skills, experience, and projects.",
+  creator: "Ahmed Qureshi",
+  publisher: "Ahmed Qureshi",
 };
 
 const technologies = [

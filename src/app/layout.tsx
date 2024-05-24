@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     "Ahmed Qureshi - Full Stack Developer | Python, JavaScript, Dart, SQL, Django, React, SvelteKit, Flutter, Next.js",
   description:
     "Ahmed Qureshi is a seasoned Full Stack Developer based in Halifax, NS, with expertise in Python, JavaScript, Dart, SQL, Django, DjangoREST Framework, React, SvelteKit, Flutter, Next.js, and more. With a strong background in both front-end and back-end development, Ahmed has a proven track record of creating dynamic and responsive web applications.",
+  creator: "Ahmed Qureshi",
+  publisher: "Ahmed Qureshi",
 };
 
 export default function RootLayout({
