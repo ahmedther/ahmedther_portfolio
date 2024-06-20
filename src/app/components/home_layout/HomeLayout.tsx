@@ -1,8 +1,8 @@
-import Image from "next/image";
 import React from "react";
 import Navigation from "../navigation/Navigation";
 import HomeFooter from "./HomeFooter";
 import TypewritterEffect from "../ui/TypewritterEffect";
+import HeroImage from "../ui/HeroImage";
 
 const HomeLayout: React.FC = () => {
   return (
@@ -11,18 +11,7 @@ const HomeLayout: React.FC = () => {
         <Navigation />
         <main className="flex flex-col items-center justify-center  m-12">
           <div className="bg-white  leading-none inline-block rounded-full hover:transition hover:duration-300 hover:ease-out hover:bg-black ">
-            <div
-              className="bg-white  leading-none inline-block rounded-full  border-4 border-black m-1 border-solid  cursor-pointer 
-            hover:transition hover:duration-300 hover:border-white hover:ease-out hover:-translate-y-4 boxShadow"
-            >
-              <Image
-                className="h-60 w-60 rounded-full  "
-                src={"/ahmed_logo.png"}
-                alt="Ahmed Logo"
-                width={300}
-                height={300}
-              />
-            </div>
+            <HeroImage classes="border-4 border-black m-1 border-solid" />
           </div>
           <h1
             className="text-white text-6xl tracking-[.5rem] py-4 px-8 font-semibold

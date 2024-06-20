@@ -6,7 +6,7 @@ import { projects } from "../data/project";
 export const metadata: Metadata = {
   title: "Projects | Ahmed Qureshi - Full Stack Developer | Portfolio Showcase",
   description:
-    "Explore the impressive portfolio of Ahmed Qureshi, a skilled Full Stack Developer. Discover his latest projects, showcasing his expertise in technologies like Python, JavaScript, Dart, SQL, Django, DjangoREST Framework, React, SvelteKit, Flutter, Next.js, and more. Get inspired by his innovative solutions and creative problem-solving abilities.",
+    "Explore the projects of Ahmed Qureshi, a Full Stack Developer based in Halifax, NS. Delve into a diverse portfolio showcasing his expertise in web development, including projects built with Python, JavaScript, Dart, SQL, Django, DjangoREST Framework, React, SvelteKit, Flutter, Next.js, and more. Discover innovative solutions and practical applications across various domains.",
   keywords:
     "Ahmed Qureshi, Full Stack Developer, Portfolio, Projects, Python, JavaScript, Dart, SQL, Django, DjangoREST Framework, React, SvelteKit, Flutter, Next.js",
   creator: "Ahmed Qureshi",
