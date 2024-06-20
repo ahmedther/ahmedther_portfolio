@@ -2,7 +2,7 @@ import React from "react";
 import { Metadata } from "next";
 
 import TechStack from "./TechStack";
-import SharedLayout from "../components/shared/layout";
+import SharedLayout from "../components/shared/SharedLayout";
 
 export const metadata: Metadata = {
   title: "Resume | Ahmed Qureshi - Full Stack Developer",

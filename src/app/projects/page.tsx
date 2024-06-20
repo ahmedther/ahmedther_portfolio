@@ -1,4 +1,4 @@
-import SharedLayout from "../components/shared/layout";
+import SharedLayout from "../components/shared/SharedLayout";
 import { Metadata } from "next";
 
 import { projects } from "../data/project";

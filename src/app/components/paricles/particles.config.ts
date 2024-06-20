@@ -1,4 +1,4 @@
-import { MoveDirection, OutMode } from "@tsparticles/engine";
+import { ISourceOptions, MoveDirection, OutMode } from "@tsparticles/engine";
 
 // const particleConfig = {
 //   background: {
@@ -68,7 +68,7 @@ import { MoveDirection, OutMode } from "@tsparticles/engine";
 //   detectRetina: true,
 // };
 
-const particleConfig = {
+const particleConfig: ISourceOptions = {
   autoPlay: true,
   background: {
     color: {

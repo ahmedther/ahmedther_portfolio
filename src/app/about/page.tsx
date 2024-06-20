@@ -1,6 +1,6 @@
 import React from "react";
 import { Metadata } from "next";
-import SharedLayout from "../components/shared/layout";
+import SharedLayout from "../components/shared/SharedLayout";
 
 export const metadata: Metadata = {
   title:
