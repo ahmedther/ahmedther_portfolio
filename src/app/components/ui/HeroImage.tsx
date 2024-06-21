@@ -1,4 +1,5 @@
 import Image from "next/image";
+import logo from "../../../../public/ahmed_logo.png";
 
 type HeroImageProps = {
   classes?: string;
@@ -12,7 +13,7 @@ hover:transition hover:duration-300 hover:border-white hover:ease-out hover:-tra
     >
       <Image
         className="h-60 w-60 rounded-full  "
-        src={"/ahmed_logo.png"}
+        src={logo}
         alt="Ahmed Logo"
         width={300}
         height={300}

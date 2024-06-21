@@ -7,8 +7,7 @@ import { type Container, type ISourceOptions } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import particleConfig from "./particles.config";
 
-import { motion } from "framer-motion";
-import HeroImage from "../ui/HeroImage";
+import LoadingScreen from "../ui/LoadingScreen";
 
 interface ParticlesTsProps {
   children: React.ReactNode;
@@ -44,17 +43,7 @@ const ParticlesTs = ({ children }: ParticlesTsProps) => {
     );
   }
 
-  return (
-    <motion.div
-      initial={{ backgroundColor: "black" }}
-      className="absolute inset-0 -z-10 flex flex-col justify-center items-center"
-    >
-      <HeroImage classes="animate-pulse animate-bounce  animate-infinite shadow-[0_0_94px_10px_rgba(255,255,255,0.75)]" />
-      <h1 className="text-4xl font-semibold text-white  animate-pulse animate-bounce  animate-infinite ">
-        Loading...
-      </h1>
-    </motion.div>
-  );
+  return <LoadingScreen />;
 };
 
 export default ParticlesTs;
