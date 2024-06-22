@@ -2,6 +2,7 @@ import SharedLayout from "../components/shared/SharedLayout";
 import { Metadata } from "next";
 
 import { projects } from "../data/project";
+import PageHeading from "../components/ui/PageHeading";
 
 export const metadata: Metadata = {
   title: "Projects | Ahmed Qureshi - Full Stack Developer | Portfolio Showcase",
@@ -22,9 +23,13 @@ export const metadata: Metadata = {
 const Projects: React.FunctionComponent = () => {
   return (
     <SharedLayout>
-      <h2 className="text-6xl font-semibold m-0">Projects</h2>
+      <PageHeading text="Projects" />
       <div className="w-full h-1 bg-[#3a3a3a41]">&nbsp;</div>
-      <div className="grid grid-cols-6 gap-8  w-full  ">
+      <div
+        className="flex flex-col gap-8  w-full  
+      md:grid md:grid-cols-6 md:gap-8 
+      "
+      >
         {projects.map((projs, index) => (
           <a
             key={projs.title}

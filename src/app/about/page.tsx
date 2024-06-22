@@ -1,6 +1,7 @@
 import React from "react";
 import { Metadata } from "next";
 import SharedLayout from "../components/shared/SharedLayout";
+import PageHeading from "../components/ui/PageHeading";
 
 export const metadata: Metadata = {
   title:
@@ -14,9 +15,13 @@ export const metadata: Metadata = {
 const AboutMe: React.FunctionComponent = () => {
   return (
     <SharedLayout>
-      <h2 className=" text-6xl font-semibold m-0">About Me</h2>
+      <PageHeading text="About Me" />
+
       <div className="w-full h-1 bg-[#3a3a3a41] " />
-      <p className="text-3xl leading-[4rem] text-justify  ">
+      <p
+        className="text-2xl 
+      md:text-3xl md:leading-[4rem] md:text-justify"
+      >
         Hello! I&apos;m Ahmed Qureshi, a programmer based in Halifax, Nova
         Scotia. My journey into the world of coding began out of personal
         curiosity and quickly evolved into a deep passion. I&apos;ve spent

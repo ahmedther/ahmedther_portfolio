@@ -17,10 +17,7 @@ interface GlareEffectsProps {
 
 const GlareEffect: React.FC<GlareEffectsProps> = ({
   children,
-  className = `m-auto flex flex-col items-center 
-  gap-10 p-32 text-white  bg-[#3a3a3a41] rounded-xl 
-  backdrop-blur-sm  w-9/12 border-[#3a3a3a41] 
-   border-solid  overflow-hidden relative   `,
+  className = `  `,
 }) => {
   const x = useMotionValue<number>(0);
   const y = useMotionValue<number>(0);
@@ -47,7 +44,13 @@ const GlareEffect: React.FC<GlareEffectsProps> = ({
       {...animationProps}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className={className}
+      className={` flex flex-col items-center 
+  gap-10 p-4 text-white w-11/12 bg-[#3a3a3a41] rounded-xl 
+  backdrop-blur-sm   border-[#3a3a3a41] 
+   border-solid  overflow-hidden relative
+   md:m-auto md:p-32 md:w-9/12
+   
+   `}
     >
       {children}
       <AnimatePresence>

@@ -3,6 +3,7 @@ import { Metadata } from "next";
 
 import TechStack from "./TechStack";
 import SharedLayout from "../components/shared/SharedLayout";
+import PageHeading from "../components/ui/PageHeading";
 
 export const metadata: Metadata = {
   title: "Resume | Ahmed Qureshi - Full Stack Developer",
@@ -24,8 +25,7 @@ const technologies = [
 const Resume: React.FunctionComponent = () => {
   return (
     <SharedLayout>
-      <h2 className="text-6xl font-semibold m-0">Resume</h2>
-
+      <PageHeading text="Resume" />
       <section className=" w-full flex flex-col items-center gap-4">
         <div className="w-full h-1 bg-[#3a3a3a41]">&nbsp;</div>
         <a
@@ -36,17 +36,6 @@ const Resume: React.FunctionComponent = () => {
         </a>
         <div className="w-full h-1 bg-[#3a3a3a41]">&nbsp;</div>
       </section>
-
-      {/* <div className="flex flex-wrap">
-        {technologies.map((tech) => (
-          <span
-            key={tech}
-            className="mr-2 mb-2 px-3 py-1 bg-gray-200 rounded-full text-sm font-medium"
-          >
-            {tech}
-          </span>
-        ))}
-      </div> */}
 
       <TechStack />
     </SharedLayout>
