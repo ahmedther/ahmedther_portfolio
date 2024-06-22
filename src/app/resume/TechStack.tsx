@@ -13,12 +13,17 @@ const TechStack: React.FC = () => {
 
       {Object.entries(techStack).map(([category, items]) => (
         <div key={category} className="items-center ">
-          <h3 className="text-3xl font-bold mb-4 hover: ">{category}</h3>
-          <div className="flex flex-wrap flex-row gap-4">
+          <h3
+            className="text-2xl font-bold mb-4 md:text-3xl
+          "
+          >
+            {category}
+          </h3>
+          <div className="flex flex-col gap-4 md:flex-wrap md:flex-row ">
             {items.map((item) => (
               <div key={item.name} className="mr-6 mb-4 flex items-center ">
-                <span className="mr-2 text-5xl">{item.icon}</span>
-                <span className="mr-2 text-3xl">{item.name}</span>
+                <span className="mr-2 text-4xl md:text-5xl">{item.icon}</span>
+                <span className="mr-2 text-2xl md:text-3xl">{item.name}</span>
               </div>
             ))}
           </div>

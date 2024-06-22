@@ -26,19 +26,21 @@ const Projects: React.FunctionComponent = () => {
       <PageHeading text="Projects" />
       <div className="w-full h-1 bg-[#3a3a3a41]">&nbsp;</div>
       <div
-        className="flex flex-col gap-8  w-full  
-      md:grid md:grid-cols-6 md:gap-8 
-      "
+        className="flex flex-col gap-8 w-full 
+                md:grid md:grid-cols-2
+                2xl:grid 2xl:grid-cols-6"
       >
         {projects.map((projs, index) => (
           <a
             key={projs.title}
             href={projs.url}
-            className={`flex flex-col gap-10 bg-white bg-opacity-5 rounded-xl text-white p-8  col-span-2 row-span-1
-                        ${index === 0 ? "col-span-4 row-span-2" : ""}
-                        ${index === 1 ? "row-span-2" : ""}
-                        ${index === 4 ? "row-span-2" : ""}
-                        hover:text-yellow-500 hover:bg-opacity-100 hover:font-semibold hover:-translate-y-6`}
+            className={`flex flex-col gap-10 bg-white bg-opacity-5 rounded-xl text-white p-8 md:col-span-1
+              ${
+                index === 0 ? "2xl:col-span-4 2xl:row-span-2" : "2xl:col-span-2"
+              }
+              ${index === 1 ? "2xl:row-span-2" : ""}
+              ${index === 4 ? "2xl:row-span-2" : ""}
+              hover:text-yellow-500 hover:bg-opacity-100 hover:font-semibold hover:-translate-y-6`}
           >
             <h3 className="p-0 m-0 text-4xl  text-center font-semibold ">
               {projs.title}
