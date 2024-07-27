@@ -1,10 +1,9 @@
 import React from "react";
 
-import { PiFileSqlFill } from "react-icons/pi";
+import { PiFileSqlFill, PiChartScatterFill } from "react-icons/pi";
 import { FaNodeJs } from "react-icons/fa";
 import { TbBrandFramerMotion } from "react-icons/tb";
-import { PiChartScatterFill } from "react-icons/pi";
-import { GrStatusUnknownSmall } from "react-icons/gr";
+import { GrStatusUnknownSmall, GrGraphQl } from "react-icons/gr";
 
 import {
   SiPython,
@@ -46,6 +45,9 @@ import {
   SiGit,
   SiGithub,
   SiSelenium,
+  SiJest,
+  SiChai,
+  SiMocha,
   SiNginx,
   SiApache,
 } from "react-icons/si";
@@ -74,6 +76,7 @@ const techStack: { [key: string]: TechStackItem[] } = {
     { name: "Node.js", icon: <FaNodeJs /> },
     { name: "Express", icon: <SiExpress /> },
     { name: "Pug", icon: <SiPug /> },
+    { name: "GraphQL", icon: <GrGraphQl /> },
   ],
 
   "React Ecosystem": [
@@ -135,6 +138,9 @@ const techStack: { [key: string]: TechStackItem[] } = {
     { name: "Selenium", icon: <SiSelenium /> },
     { name: "PyAutoGui", icon: <GrStatusUnknownSmall /> },
     { name: "Sikuli", icon: <GrStatusUnknownSmall /> },
+    { name: "Jest", icon: <SiJest /> },
+    { name: "Chai", icon: <SiChai /> },
+    { name: "Mocha", icon: <SiMocha /> },
   ],
 
   "Web Servers": [
