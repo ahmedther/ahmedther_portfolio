@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  images: {
-    unoptimized: true,
-  },
+  reactStrictMode: true,
+};
 
-  async redirects() {
+if (process.env.HOSTING === "Firebase") {
+  nextConfig.output = "export";
+  nextConfig.images = {
+    unoptimized: true,
+  };
+} else {
+  nextConfig.redirects = async () => {
     return [
       {
         source: "/guest",
@@ -13,7 +17,27 @@ const nextConfig = {
         permanent: false, // Set to true for permanent redirects
       },
     ];
-  },
-};
+  };
+}
+
+// if(process.env.HOSTING === 'production') {}
+
+// const nextConfig = {
+
+//   // output: "export",
+//   // images: {
+//   //   unoptimized: true,
+//   // },
+
+//   async redirects() {
+//     return [
+//       {
+//         source: "/guest",
+//         destination: "/",
+//         permanent: false, // Set to true for permanent redirects
+//       },
+//     ];
+//   },
+// };
 
 export default nextConfig;
