@@ -13,15 +13,6 @@ export const metadata: Metadata = {
   publisher: "Ahmed Qureshi",
 };
 
-const technologies = [
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Tailwind CSS",
-  "Node.js",
-  // Add or remove technologies as needed
-];
-
 const Resume: React.FunctionComponent = () => {
   return (
     <SharedLayout>
