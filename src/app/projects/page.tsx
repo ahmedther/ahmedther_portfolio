@@ -3,6 +3,7 @@ import { Metadata } from "next";
 
 import { projects } from "../data/project";
 import PageHeading from "../components/ui/PageHeading";
+import ProjectCard from "../components/projects/ProjectCard";
 
 export const metadata: Metadata = {
   title: "Projects | Ahmed Qureshi - Full Stack Developer | Portfolio Showcase",
@@ -25,36 +26,33 @@ const Projects: React.FunctionComponent = () => {
     <SharedLayout>
       <PageHeading text="Projects" />
       <div className="w-full h-1 bg-[#3a3a3a41]">&nbsp;</div>
-      <div
-        className="flex flex-col gap-8 w-full 
-                md:grid md:grid-cols-2
-                2xl:grid 2xl:grid-cols-6"
-      >
-        {projects.map((projs, index) => (
-          <a
-            key={projs.title}
-            href={projs.url}
-            className={`flex flex-col gap-10 bg-white bg-opacity-5 rounded-xl text-white p-8 md:col-span-1
-              ${
-                index === 0 ? "2xl:col-span-4 2xl:row-span-2" : "2xl:col-span-2"
-              }
-              ${index === 1 ? "2xl:row-span-2" : ""}
-              ${index === 4 ? "2xl:row-span-2" : ""}
-              hover:text-yellow-500 hover:bg-opacity-100 hover:font-semibold hover:-translate-y-6`}
-          >
-            <h3 className="p-0 m-0 text-4xl  text-center font-semibold ">
-              {projs.title}
-            </h3>
-            <div className="w-full h-1 bg-[#3a3a3a41]">&nbsp;</div>
+      <div className="flex flex-col gap-8 w-full">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+          // <a
+          //   key={projs.title}
+          //   href={projs.url}
+          //   className={`flex flex-col gap-10 bg-white bg-opacity-5 rounded-xl text-white p-8 md:col-span-1
+          //     ${
+          //       index === 0 ? "2xl:col-span-4 2xl:row-span-2" : "2xl:col-span-2"
+          //     }
+          //     ${index === 1 ? "2xl:row-span-2" : ""}
+          //     ${index === 4 ? "2xl:row-span-2" : ""}
+          //     hover:text-yellow-500 hover:bg-opacity-100 hover:font-semibold hover:-translate-y-6`}
+          // >
+          //   <h3 className="p-0 m-0 text-4xl  text-center font-semibold ">
+          //     {projs.title}
+          //   </h3>
+          //   <div className="w-full h-1 bg-[#3a3a3a41]">&nbsp;</div>
 
-            <p
-              className={`text-2xl flex-1 flex items-center  ${
-                index === 4 ? "whitespace-pre-wrap" : ""
-              }`}
-            >
-              {projs.description}{" "}
-            </p>
-          </a>
+          //   <p
+          //     className={`text-2xl flex-1 flex items-center  ${
+          //       index === 4 ? "whitespace-pre-wrap" : ""
+          //     }`}
+          //   >
+          //     {projs.description}{" "}
+          //   </p>
+          // </a>
         ))}
       </div>
     </SharedLayout>

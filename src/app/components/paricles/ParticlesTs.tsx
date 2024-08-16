@@ -29,21 +29,19 @@ const ParticlesTs = ({ children }: ParticlesTsProps) => {
 
   const options: ISourceOptions = useMemo(() => particleConfig, []);
 
-  if (init) {
-    return (
-      <>
-        <Particles
-          id="tsparticles"
-          particlesLoaded={particlesLoaded}
-          options={options}
-          className=" absolute -z-10"
-        />
-        {children}
-      </>
-    );
-  }
+  if (!init) return <LoadingScreen />;
 
-  return <LoadingScreen />;
+  return (
+    <>
+      <Particles
+        id="tsparticles"
+        particlesLoaded={particlesLoaded}
+        options={options}
+        className=" absolute -z-10"
+      />
+      {children}
+    </>
+  );
 };
 
 export default ParticlesTs;
