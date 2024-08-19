@@ -44,6 +44,7 @@ import {
   SiKubernetes,
   SiGit,
   SiGithub,
+  SiPlaywright,
   SiSelenium,
   SiJest,
   SiChai,
@@ -135,6 +136,7 @@ const techStack: { [key: string]: TechStackItem[] } = {
   ],
 
   "Automation and Testing": [
+    { name: "Playwright", icon: <SiPlaywright /> },
     { name: "Selenium", icon: <SiSelenium /> },
     { name: "PyAutoGui", icon: <GrStatusUnknownSmall /> },
     { name: "Sikuli", icon: <GrStatusUnknownSmall /> },
